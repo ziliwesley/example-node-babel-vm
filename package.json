@@ -1,0 +1,36 @@
+{
+  "name": "example-node-babel-vm",
+  "version": "0.1.0",
+  "description": "Demo repo to try out `vm` module of node.js",
+  "main": "app.js",
+  "scripts": {
+    "dev": "DEBUG=demo* node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziliwesley/example-node-babel-vm.git"
+  },
+  "keywords": [
+    "node",
+    "v8",
+    "vm",
+    "babel"
+  ],
+  "author": "Zili",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ziliwesley/example-node-babel-vm/issues"
+  },
+  "homepage": "https://github.com/ziliwesley/example-node-babel-vm#readme",
+  "dependencies": {
+    "babel-core": "^6.3.26",
+    "babel-preset-es2015-node4": "^2.0.2",
+    "babel-preset-stage-1": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "bluebird": "^3.1.1",
+    "debug": "^2.2.0",
+    "inquirer": "^0.11.1",
+    "lodash": "^3.10.1"
+  }
+}
