@@ -18,7 +18,12 @@ export function review(source, { filename = 'vm.js', babelify = false }) {
             code,
             map,
             ast
-        } = transform(source);
+        } = transform(source, {
+            presets: [
+                'es2015-node4',
+                'stage-1'
+            ]
+        });
 
         debug('transpiled', '\n' + highlight(code, highlightOpts));
         debug('map', map);
