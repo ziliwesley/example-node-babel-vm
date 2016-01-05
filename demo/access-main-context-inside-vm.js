@@ -43,18 +43,18 @@ const sandbox = {
 // sandbox,
 // But they are different and clear
 const code = `
-    var size = store.getAll().size;
+var size = store.getAll().size;
 
-    var cane = { name: 'Cane' };
+var cane = { name: 'Cane' };
 
-    store.save({ name: 'John' });
-    store.save(cane);
+store.save({ name: 'John' });
+store.save(cane);
 
-    var sizeBetween = store.getAll().size;
+var sizeBetween = store.getAll().size;
 
-    store.remove(cane);
+store.remove(cane);
 
-    var sizeFinally = store.getAll().size;
+var sizeFinally = store.getAll().size;
 `;
 
 // Nothing is returned

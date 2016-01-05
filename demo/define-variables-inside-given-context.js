@@ -26,22 +26,22 @@ const sandbox = {
 // sandbox,
 // But they are different and clear
 const code = `
-    var r = 10;
-    var perimeterOfAnotherUniverse = multiply(2, PI_OF_ANOTHER_UNIVERSE, r);
+var r = 10;
+var perimeterOfAnotherUniverse = multiply(2, PI_OF_ANOTHER_UNIVERSE, r);
 
-    var perimeter = multiply(2, Math.PI, r);
+var perimeter = multiply(2, Math.PI, r);
 
-    var message = \`${'hello'.toUpperCase()} ${['w', 'o', 'r', 'l', 'd'].join('')}\`
+var message = \`${'hello'.toUpperCase()} ${['w', 'o', 'r', 'l', 'd'].join('')}\`
 
-    var now = Date.now();
+var now = Date.now();
 
-    function multiply() {
-        return Array.prototype.reduce.call(arguments, (prev, curr) => {
-            return prev * curr;
-        }, 1)
-    }
+function multiply() {
+    return Array.prototype.reduce.call(arguments, (prev, curr) => {
+        return prev * curr;
+    }, 1)
+}
 
-    var FunctionCtor = Function;
+var FunctionCtor = Function;
 `;
 
 // Nothing is returned

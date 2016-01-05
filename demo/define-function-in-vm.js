@@ -11,10 +11,10 @@ const sandbox = {
 };
 
 const code = `
-    (function factorial(n) {
-        debug(\`Calc factorial of $\{n\}\`);
-        return n === 1 ? 1: n * factorial(n - 1);
-    })
+(function factorial(n) {
+    debug(\`Calc factorial of $\{n\}\`);
+    return n === 1 ? 1: n * factorial(n - 1);
+});
 `;
 
 // A function is returned
